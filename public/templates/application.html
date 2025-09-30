@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captaincy Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 100vh; */
+            margin: 0;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            width: 100%;
+            max-width: 700px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .container h1 {    
+            text-align: center;
+            background-color: #28a745;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            /* margin-top: 10px; */
+        }
+        .form-group {
+            margin-bottom: 15px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-family: sans-serif;
+            font-weight: 600;
+        }
+        .form-group input, .form-group select {
+            width: 50%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: border-color 0.3s ease;
+        }
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: vertical;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: border-color 0.3s ease;
+        }
+        .form-group input:focus{
+            border: 1px solid #28a745;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            
+        }
+        .submit-btn {
+            background: #28a745;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100px;
+            height: 50px;
+        }
+        .submit-btn:hover{
+            background-color: #188130;
+        }
+     
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+     
+        <h1>Captaincy Application Form</h1>
+        <form id="applicationForm" action="/submit" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Full Address:</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="role">Role:</label>
+                <select id="role" name="role" required>
+                    <option value="batter">Batter</option>
+                    <option value="bowler">Bowler</option>
+                    <option value="allrounder">All-rounder</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="matches">Total Matches Played:</label>
+                <input type="number" id="matches" name="matches" required>
+            </div>
+            <div class="form-group">
+                <label for="experience">Experience (Years):</label>
+                <input type="number" id="experience" name="experience" required>
+            </div>
+            <div class="form-group">
+                <label for="achievements">Achievements:</label>
+                <textarea id="achievements" name="achievements" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+    <!-- <script>
+        document.getElementById('applicationForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Application submitted successfully!');
+        });
+    </script> -->
+    
+</body>
+</html>

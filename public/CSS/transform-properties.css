@@ -1,0 +1,46 @@
+/* CSS Transforms Examples */
+
+.container {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: 50px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 18px;
+}
+
+/* Translate */
+.translate {
+    transform: translate(50px, 100px);
+}
+
+/* Rotate */
+.rotate {
+    transform: rotate(45deg);
+}
+
+/* Scale */
+.scale {
+    transform: scale(1.5);
+}
+
+/* Skew */
+.skew {
+    transform: skew(30deg, 15deg);
+}
+
+/* Matrix */
+.matrix {
+    transform: matrix(1, 0.5, 0, 1, 10, 20);
+}
+
+/* Perspective */
+.perspective {
+    transform: perspective(500px) rotateY(45deg);
+}
+
+/* Combining Multiple */
+.combined {
+    transform: translate(50px, 50px) rotate(20deg) scale(1.2);
+}

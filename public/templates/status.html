@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Player Statistics</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .update-button, .clear-button {
+            padding: 5px 5px;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .update-button {
+            background-color: #4CAF50;
+        }
+        .update-button:hover {
+            background-color: #45a049;
+        }
+        .clear-button {
+            background-color: #f44336;
+        }
+        .clear-button:hover {
+            background-color: #e53935;
+        }
+        tr:nth-child(even){
+            background-color: #f2f2f2;
+        }
+        th[colspan]{
+            background-color: #45a049;
+            color: white;
+            font-size: 24px;
+        }
+    
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th rowspan="2">Players</th>
+            <th colspan="12">Status</th>
+        </tr>
+        <tr class="head">
+            <th>Matches</th>
+            <th>Runs</th>
+            <th>Balls</th>
+            <th>Sixes</th>
+            <th>Fours</th>
+            <th>SR</th>
+            <th>50s</th>
+            <th>100s</th>
+            <th>200s</th>
+            <th>Wickets</th>
+            <th>Action</th>
+           
+        </tr>
+        <tr>
+            <td>Parda</td>
+            <td>0</td> 
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>
+                <button class="update-button" id="p1">Update</button>
+                <button class="clear-button" id="clear-p1">Clear</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Billu</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>
+                <button class="update-button" id="p2">Update</button>
+                <button class="clear-button" id="clear-p2">Clear</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Hashmi</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>
+                <button class="update-button" id="p3">Update</button>
+                <button class="clear-button" id="clear-p3">Clear</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Frient</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>
+                <button class="update-button" id="p3">Update</button>
+                <button class="clear-button" id="clear-p3">Clear</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Peeligoti</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>
+                <button class="update-button" id="p3">Update</button>
+                <button class="clear-button" id="clear-p3">Clear</button>
+            </td>
+        </tr>
+        <tr>
+            <td>F Jhunior</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>
+                <button class="update-button" id="p3">Update</button>
+                <button class="clear-button" id="clear-p3">Clear</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Bhabha </td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>
+                <button class="update-button" id="p3">Update</button>
+                <button class="clear-button" id="clear-p3">Clear</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Islami Bhai</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>
+                <button class="update-button" id="p3">Update</button>
+                <button class="clear-button" id="clear-p3">Clear</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Islamoo</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>
+                <button class="update-button" id="p3">Update</button>
+                <button class="clear-button" id="clear-p3">Clear</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Polo</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>
+                <button class="update-button" id="p3">Update</button>
+                <button class="clear-button" id="clear-p3">Clear</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Yawar Abbas</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>
+                <button class="update-button" id="p3">Update</button>
+                <button class="clear-button" id="clear-p3">Clear</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Radnab Alems</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>
+                <button class="update-button" id="p3">Update</button>
+                <button class="clear-button" id="clear-p3">Clear</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Teef Khota</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>
+                <button class="update-button" id="p3">Update</button>
+                <button class="clear-button" id="clear-p3">Clear</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Sheraz PAF</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>
+                <button class="update-button" id="p3">Update</button>
+                <button class="clear-button" id="clear-p3">Clear</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Shakir Of Waves</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>
+                <button class="update-button" id="p3">Update</button>
+                <button class="clear-button" id="clear-p3">Clear</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Ghamma</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>
+                <button class="update-button" id="p3">Update</button>
+                <button class="clear-button" id="clear-p3">Clear</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Chich</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>
+                <button class="update-button" id="p3">Update</button>
+                <button class="clear-button" id="clear-p3">Clear</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Jheend Almak</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>
+                <button class="update-button" id="p3">Update</button>
+                <button class="clear-button" id="clear-p3">Clear</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Bhidi</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>
+                <button class="update-button" id="p3">Update</button>
+                <button class="clear-button" id="clear-p3">Clear</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Zawari</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>
+                <button class="update-button" id="p3">Update</button>
+                <button class="clear-button" id="clear-p3">Clear</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Maser Oye</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>
+                <button class="update-button" id="p3">Update</button>
+                <button class="clear-button" id="clear-p3">Clear</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Naseero</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>
+                <button class="update-button" id="p3">Update</button>
+                <button class="clear-button" id="clear-p3">Clear</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Pantee Soo</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>
+                <button class="update-button" id="p3">Update</button>
+                <button class="clear-button" id="clear-p3">Clear</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Chiyonti</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>
+                <button class="update-button" id="p3">Update</button>
+                <button class="clear-button" id="clear-p3">Clear</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Roach</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>
+                <button class="update-button" id="p3">Update</button>
+                <button class="clear-button" id="clear-p3">Clear</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Ibrahim Pind</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>
+                <button class="update-button" id="p3">Update</button>
+                <button class="clear-button" id="clear-p3">Clear</button>
+            </td>
+        </tr>
+        <tr>
+            <td>FC Crow</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>
+                <button class="update-button" id="p3">Update</button>
+                <button class="clear-button" id="clear-p3">Clear</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Pahloo Kokorona</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>
+                <button class="update-button" id="p3">Update</button>
+                <button class="clear-button" id="clear-p3">Clear</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Salam Nakar</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>
+                <button class="update-button" id="p3">Update</button>
+                <button class="clear-button" id="clear-p3">Clear</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Ketcher</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>
+                <button class="update-button" id="p3">Update</button>
+                <button class="clear-button" id="clear-p3">Clear</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Shiva</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>
+                <button class="update-button" id="p3">Update</button>
+                <button class="clear-button" id="clear-p3">Clear</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Makkhi Kallu</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>
+                <button class="update-button" id="p3">Update</button>
+                <button class="clear-button" id="clear-p3">Clear</button>
+            </td>
+        </tr>
+      
+    </table>
+
+    <script>
+        // Function to load data from localStorage
+        function loadData() {
+            document.querySelectorAll('tr').forEach((row, index) => {
+                if (index > 1) { // Skip header rows
+                    const player = `player${index - 1}`;
+                    const data = JSON.parse(localStorage.getItem(player)) || {};
+                    row.children[1].textContent = data.matches || 0;
+                    row.children[2].textContent = data.runs || 0;
+                    row.children[3].textContent = data.balls || 0;
+                    row.children[4].textContent = data.sixes || 0;
+                    row.children[5].textContent = data.fours || 0;
+                    row.children[6].textContent = data.sr || 0;
+                    row.children[7].textContent = data.fifties || 0;
+                    row.children[8].textContent = data.hundreds || 0;
+                    row.children[9].textContent = data.twoHundreds || 0;
+                    row.children[10].textContent = data.wickets || 0;
+                }
+            });
+        }
+
+        // Function to save data to localStorage
+        function saveData(player, data) {
+            localStorage.setItem(player, JSON.stringify(data));
+        }
+
+        // Function to clear data for a player
+        function clearData(player) {
+            localStorage.removeItem(player);
+            loadData();
+        }
+
+        // Load data when the page loads
+        loadData();
+
+        // Add event listeners for update buttons
+        document.querySelectorAll('.update-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const row = button.parentElement.parentElement;
+                const player = `player${row.rowIndex - 1}`;
+
+                let score = parseInt(prompt("Enter new score:"));
+                let balls = parseInt(prompt("Enter balls played:"));
+                let fours = parseInt(prompt("Enter fours:"));
+                let sixes = parseInt(prompt("Enter sixes:"));
+                let wickets = parseInt(prompt("Enter wickets:"));
+
+                if (!isNaN(score) && !isNaN(balls) && !isNaN(fours) && !isNaN(sixes) && !isNaN(wickets)) {
+                    // Increment Matches
+                    row.children[1].textContent = parseInt(row.children[1].textContent) + 1;
+                    
+                    // Update Runs
+                    row.children[2].textContent = parseInt(row.children[2].textContent) + score;
+
+                    // Update Balls
+                    row.children[3].textContent = parseInt(row.children[3].textContent) + balls;
+
+                    // Update Sixes
+                    row.children[4].textContent = parseInt(row.children[4].textContent) + sixes;
+
+                    // Update Fours
+                    row.children[5].textContent = parseInt(row.children[5].textContent) + fours;
+
+                    // update wickets
+                    row.children[10].textContent = parseInt(row.children[10].textContent) + wickets;
+
+                    // Update Strike Rate
+                    let runs = parseInt(row.children[2].textContent);
+                    let totalBalls = parseInt(row.children[3].textContent);
+                    row.children[6].textContent = ((runs / totalBalls) * 100).toFixed(2);
+
+                    // Update 50s
+                    if (score > 49 && score < 100 || score > 149 && score < 200 || score > 249 && score < 300) {
+                        row.children[7].textContent = parseInt(row.children[7].textContent) + 1;
+                    }
+
+                    // Update 100s
+                    if (score > 99 && score < 200) {
+                        row.children[8].textContent = parseInt(row.children[8].textContent) + 1;
+                    }
+
+                    // Update 200s
+                    if (score > 199 && score < 300) {
+                        row.children[9].textContent = parseInt(row.children[9].textContent) + 1;
+                    }
+
+                    // Save data to localStorage
+                    const data = {
+                        matches: parseInt(row.children[1].textContent),
+                        runs: parseInt(row.children[2].textContent),
+                        balls: parseInt(row.children[3].textContent),
+                        sixes: parseInt(row.children[4].textContent),
+                        fours: parseInt(row.children[5].textContent),
+                        sr: parseFloat(row.children[6].textContent),
+                        fifties: parseInt(row.children[7].textContent),
+                        hundreds: parseInt(row.children[8].textContent),
+                        twoHundreds: parseInt(row.children[9].textContent),
+                        wickets: parseInt(row.children[10].textContent)
+                    };
+                    saveData(player, data);
+                } else {
+                    alert("Please enter valid numbers.");
+                }
+            });
+        });
+
+        // Add event listeners for clear buttons
+        document.querySelectorAll('.clear-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const row = button.parentElement.parentElement;
+                const player = `player${row.rowIndex - 1}`;
+                clearData(player);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updates</title>
+    <style>
+        body {
+            background-color: #fff;
+            font-family: sans-serif;
+        }
+
+        #stories-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            width: 65%;
+         
+        }
+
+        .story {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+               margin-bottom: 40px;
+        }
+
+        .image {
+            width: 73%;
+            margin: 10px 0px;
+            height: 330px;
+        }
+
+        .image img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .story h1 {
+            display: block;
+            /* background-color: aqua; */
+            color: blue;
+            margin: 10px 0px;
+            padding: 10px 25px;
+            font-size: 30px;
+            text-align: center;
+            border-left: 14px solid red;
+            border-right: 14px solid red;
+            border-top: 1px solid red;
+            border-bottom: 1px solid red;
+        }
+
+        .story p {
+            display: block;
+            margin: 0;
+            padding: 10px 25px;
+            font-size: 18px;
+        }
+        @media screen and (max-width: 530px) {
+             #stories-container {
+                width: 100%;
+             }
+              .image {
+            width: 73%;
+            margin: 10px 0px;
+            height: 200px;
+        }
+        .story h1{
+            font-size: 20px;
+        }
+         .story p{
+            font-size: 14px;
+         }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="stories-container">
+        <div class="story">
+            <div class="image">
+                <img src="../images/bhidi.jpg" alt="">
+            </div>
+            <h1>Bhidi has said that if Jheend keeps calling him selfish he will leave the team.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, maiores perspiciatis assumenda ipsam
+                aspernatur dolor expedita nisi perferendis praesentium nesciunt!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit odio modi velit vel facilis
+                exercitationem maxime, doloremque similique dolor et consequuntur quo at earum assumenda odit eum
+                aliquid dicta? Quibusdam?</p>
+        </div>
+
+
+        <div class="story">
+            <div class="image">
+                <img src="../images/billu.jpg" alt="">
+            </div>
+            <h1>ShakirWave and Ghamma have formed a partnership and joined their forces. Now one of them will contest the election.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, maiores perspiciatis assumenda ipsam
+                aspernatur dolor expedita nisi perferendis praesentium nesciunt!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit odio modi velit vel facilis
+                exercitationem maxime, doloremque similique dolor et consequuntur quo at earum assumenda odit eum
+                aliquid dicta? Quibusdam?</p>
+        </div>
+    </div>
+</body>
+
+</html>
