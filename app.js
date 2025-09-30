@@ -1,23 +1,29 @@
 import express from 'express';
 import path from 'path';
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const app = express();
 // absolute path
 const staticPath = path.join(import.meta.dirname, 'public');
+const viewsPath = path.join(import.meta.dirname, 'views');
+
 app.use(express.static(staticPath));
+
 app.get('/', (req, res) => {
-  res.sendFile(path.join(staticPath, "templates", "BCB.html"));
+  res.sendFile(path.join(viewsPath, 'BCB.html'));
 });
+
 app.get('/updates', (req, res) => {
-  res.sendFile(path.join(staticPath, "templates", "updates.html"))
-})
+  res.sendFile(path.join(viewsPath, 'updates.html'));
+});
+
 app.get('/series', (req, res) => {
-  res.sendFile(path.join(staticPath, "templates", "series.html"))
-})
+  res.sendFile(path.join(viewsPath, 'series.html'));
+});
 
 app.use((req, res) => {
-  return res.status(404).sendFile(path.join(staticPath, "templates", "404.html"));
-})
+  res.status(404).sendFile(path.join(viewsPath, '404.html'));
+});
+
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
